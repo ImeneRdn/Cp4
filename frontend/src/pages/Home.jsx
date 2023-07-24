@@ -1,36 +1,24 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "../components/navbar/Navbar";
+import Accueil from "../components/accueil/Accueil";
+import QuiSommesNous from "../components/quiSommesNous/QuiSommesNous";
+import Compte from "../components/compte/Compte";
+import Footer from "../components/footer/Footer";
 
-export default function Home() {
+function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
+    <div>
+      <Navbar />
 
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
+        <Route path="/compte" element={<Compte />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
+
+export default Home;

@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+}

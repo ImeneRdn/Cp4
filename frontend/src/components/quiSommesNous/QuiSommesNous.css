@@ -1,0 +1,25 @@
+.background {
+  background-image: url("../../assets/cerisier_seoul 1.png");
+  background-size: cover;
+
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.container-global-us {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  width: 50%;
+  height: 70%;
+}
